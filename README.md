@@ -12,11 +12,12 @@ Add to your javascript:
 ```
 
 Add to your stylesheet:
-1. if you are using compass
-    ```scss
-    @import 'photoswipe-compass';
-    ```
-2. if you are not using compass:
-    ```scss
-    @import 'photoswipe';
-    ```
+<br>
+1) if you are using compass
+```scss
+@import 'photoswipe-compass';
+```
+2) if you are not using compass:
+```scss
+@import 'photoswipe';
+```
