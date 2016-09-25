@@ -1,3 +1,3 @@
 module PhotoSwipe
-  VERSION = '4.1.1'.freeze
+  VERSION = '4.1.1.1'.freeze
 end
