@@ -40,7 +40,7 @@
 /* style is added when JS option showHideOpacity is set to true */
 .pswp--animate_opacity {
 	/* 0.001, because opacity:0 doesn't trigger Paint action, which causes lag at start of transition */
-	opacity: 0;
+	opacity: 0.001;
 	will-change:opacity;
 	/* for open/close transition */
 	@include transition(opacity $pswp__show-hide-transition-duration cubic-bezier(.4,0,.22,1));
