@@ -40,18 +40,18 @@
 	padding: 0;
 	margin: 0;
 	float: right;
-	@include opacity(0.75);
+	opacity: 0.75;
 	@include transition(opacity 0.2s);
 	@include box-shadow(none);
 
 	&:focus,
 	&:hover {
-		@include opacity(1);
+		opacity: 1;
 	}
 	
 	&:active {
 		outline: none;
-		@include opacity(0.9);
+		opacity: 0.9;
 	}
 
 	&::-moz-focus-inner {
@@ -62,7 +62,7 @@
 
 /* pswp__ui--over-close class it added when mouse is over element that should close gallery */
 .pswp__ui--over-close .pswp__button--close {
-	@include opacity(1);
+	opacity: 1;
 }
 
 .pswp__button,
@@ -194,7 +194,7 @@
 	padding: 10px;
 	position: absolute;
 	z-index: $pswp__root-z-index + 100;
-	@include opacity(0);
+	opacity: 0;
 	@include transition(opacity 0.25s ease-out);
 	@include backface-visibility(hidden);
 	will-change: opacity;
@@ -245,7 +245,7 @@
 }
 
 .pswp__share-modal--fade-in {
-	@include opacity(1);
+	opacity: 1;
 
 	.pswp__share-tooltip {
 		@include transform(translateY(0));
@@ -319,7 +319,7 @@ a.pswp__share--download {
 	font-size: 13px;
 	line-height: 44px;
 	color: #FFF;
-	@include opacity(0.75);
+	opacity: 0.75;
 	padding: 0 10px;
 }
 
@@ -378,7 +378,7 @@ a.pswp__share--download {
 	top: 0;
 	left: 50%;
 	margin-left: -22px;
-	@include opacity(0);
+	opacity: 0;
 	@include transition(opacity 0.25s ease-out); 
 	will-change: opacity;
 	direction: ltr;
@@ -391,7 +391,7 @@ a.pswp__share--download {
 }
 
 .pswp__preloader--active {
-	@include opacity(1);
+	opacity: 1;
 
 	.pswp__preloader__icn {
 		/* We use .gif in browsers that don't support CSS animation */
@@ -401,7 +401,7 @@ a.pswp__share--download {
 
 .pswp--css_animation {
 	.pswp__preloader--active {
-		@include opacity(1);
+		opacity: 1;
 
 		.pswp__preloader__icn {
 			@include animation(clockwise 500ms linear infinite);
@@ -414,7 +414,7 @@ a.pswp__share--download {
 	
 	.pswp__preloader__icn {
 		background: none;
-		@include opacity(0);
+		opacity: 0;
 		width: 14px;
 		height: 14px;
 		position: absolute;
@@ -483,7 +483,7 @@ a.pswp__share--download {
 .pswp__ui {
 	-webkit-font-smoothing: auto;
 	visibility: visible;
-	@include opacity(1);
+	opacity: 1;
 	z-index: $pswp__root-z-index + 50;
 }
 
@@ -530,12 +530,12 @@ a.pswp__share--download {
 	
 .pswp__ui--idle {
 	.pswp__top-bar { 
-		@include opacity(0);
+		opacity: 0;
 	}
 
 	.pswp__button--arrow--left,
 	.pswp__button--arrow--right {
-		@include opacity(0);
+		opacity: 0;
 	}
 }
 
@@ -549,7 +549,7 @@ a.pswp__share--download {
 	.pswp__button--arrow--left,
 	.pswp__button--arrow--right {
 		/* Force paint & create composition layer for controls. */
-		@include opacity(0.001);
+		opacity: 0.001;
 	}
 }
 
