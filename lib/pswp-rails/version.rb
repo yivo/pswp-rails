@@ -2,5 +2,5 @@
 # frozen_string_literal: true
 
 module PhotoSwipe
-  VERSION = '4.1.1.1'
+  VERSION = '4.1.1.2'
 end
