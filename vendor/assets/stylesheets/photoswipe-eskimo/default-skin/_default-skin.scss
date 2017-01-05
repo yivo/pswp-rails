@@ -68,7 +68,7 @@
 .pswp__button,
 .pswp__button--arrow--left:before,
 .pswp__button--arrow--right:before {
-	background: asset-data-url('photoswipe/default-skin/default-skin.png') 0 0 no-repeat;
+	background: pswp__inline-asset('photoswipe/default-skin/default-skin.png') 0 0 no-repeat;
 	background-size: 264px 88px;
 	width: 44px;
 	height: 44px;
@@ -80,7 +80,7 @@
     .pswp--svg .pswp__button,
     .pswp--svg .pswp__button--arrow--left:before,
 	.pswp--svg .pswp__button--arrow--right:before {
-        background-image: asset-data-url('photoswipe/default-skin/default-skin.svg');
+        background-image: pswp__inline-asset('photoswipe/default-skin/default-skin.svg');
     }
 
     .pswp--svg .pswp__button--arrow--left,
@@ -393,7 +393,7 @@ a.pswp__share--download {
 
 	.pswp__preloader__icn {
 		/* We use .gif in browsers that don't support CSS animation */
-		background: asset-data-url('photoswipe/default-skin/preloader.gif') 0 0 no-repeat;
+		background: pswp__inline-asset('photoswipe/default-skin/preloader.gif') 0 0 no-repeat;
 	}
 }
 
@@ -571,15 +571,3 @@ a.pswp__share--download {
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
