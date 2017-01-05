@@ -1,6 +1,8 @@
+# encoding: utf-8
+# frozen_string_literal: true
+
 require File.expand_path('../lib/pswp-rails/version', __FILE__)
 
-# frozen_string_literal: true
 Gem::Specification.new do |s|
   s.name            = 'pswp-rails'
   s.version         = PhotoSwipe::VERSION
@@ -11,8 +13,6 @@ Gem::Specification.new do |s|
   s.homepage        = 'https://github.com/yivo/pswp-rails'
   s.license         = 'MIT'
 
-  s.executables     = `git ls-files -z -- bin/*`.split("\x0").map{ |f| File.basename(f) }
   s.files           = `git ls-files -z`.split("\x0")
-  s.test_files      = `git ls-files -z -- {test,spec,features}/*`.split("\x0")
   s.require_paths   = ['lib']
 end
